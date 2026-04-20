@@ -3,7 +3,7 @@
 	import { clickOutside } from "@svar-ui/lib-dom";
 	import { onMount } from "svelte";
 
-	let { editor, onaction, onsave, onapply, oncancel } = $props();
+	let { editor, onaction, onsave, onapply } = $props();
 	let { config } = $state(editor);
 
 	const options = $derived(editor?.options ?? []);
@@ -50,7 +50,7 @@
 	bind:this={node}
 	class="wx-value"
 	tabindex="0"
-	onclick={oncancel}
+	onclick={() => onsave()}
 	onkeydown={ev => {
 		keydown(ev, index);
 		ev.preventDefault();
@@ -76,7 +76,7 @@
 	checkboxes={true}
 	multiselect={true}
 	{...dropdownOptions}
-	{oncancel}
+	oncancel={() => onsave()}
 	{value}
 >
 	{#snippet children({ option })}

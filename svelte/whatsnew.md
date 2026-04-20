@@ -1,3 +1,10 @@
+## 2.6.2
+
+### Fixes
+
+-   Incorrect type for `filterValues`
+-   Multiselect editor value is not applied
+
 ## 2.6.1
 
 ### Fixes

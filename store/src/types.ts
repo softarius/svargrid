@@ -68,7 +68,7 @@ export interface IConfig {
 	undo?: boolean;
 	select?: TSelect;
 	reorder?: boolean;
-	filterValues: IFilterValues;
+	filterValues?: IFilterValues;
 }
 
 interface IProConfig extends IConfig {
