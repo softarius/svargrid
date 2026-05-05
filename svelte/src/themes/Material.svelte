@@ -1,6 +1,6 @@
 <script>
 	import { Material } from "@svar-ui/svelte-core";
-	let { fonts = true, children } = $props();
+	let { fonts = false, children } = $props();
 </script>
 
 {#if children}
@@ -13,7 +13,7 @@
 	:global(.wx-material-theme) {
 		/*PLACE HERE*/
 
-		--wx-table-select-background: #f0f0f0;
+		--wx-table-select-background: #f0f0a0;
 		--wx-table-select-color: var(--wx-color-font);
 		--wx-table-border: 1px solid #dfdfdf;
 		--wx-table-select-border: none;
@@ -22,7 +22,7 @@
 		--wx-table-footer-cell-border: var(--wx-table-border);
 		--wx-table-cell-border: var(--wx-table-border);
 		--wx-header-font-weight: 500;
-		--wx-table-header-background: #fafafb;
+		--wx-table-header-background: #30dfdf;
 		--wx-table-fixed-column-border: 3px solid #dfdfdf;
 		--wx-table-editor-dropdown-border: none;
 		--wx-table-editor-dropdown-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);

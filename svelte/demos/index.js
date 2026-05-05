@@ -3,6 +3,8 @@ import Demos from "./common/Index.svelte";
 
 import Willow from "../src/themes/Willow.svelte";
 import WillowDark from "../src/themes/WillowDark.svelte";
+import Material from "../src/themes/Material.svelte";
+
 import { WillowIcon, WillowDarkIcon } from "./assets/icons/index";
 
 mount(Demos, {
@@ -12,6 +14,12 @@ mount(Demos, {
 		productTag: "grid",
 		productLink: "datagrid",
 		skins: [
+			{
+				id: "material",
+				label: "Material",
+				component: Material,
+				icon: WillowIcon,
+			},
 			{
 				id: "willow",
 				label: "Willow",

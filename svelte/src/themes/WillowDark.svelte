@@ -1,6 +1,6 @@
 <script>
 	import { WillowDark } from "@svar-ui/svelte-core";
-	let { fonts = true, children } = $props();
+	let { fonts = false, children } = $props();
 </script>
 
 {#if children}
